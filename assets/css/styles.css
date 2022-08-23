@@ -3,10 +3,10 @@
 
 @import "{{ site.theme }}";
 
-.postlinks {
+h1#posts {
     color: forestgreen;
     text-decoration: none;
 }
-.postlinks:hover {
+h1#posts:hover {
     text-decoration: underline;
 }
