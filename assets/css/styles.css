@@ -2,11 +2,11 @@
 ---
 
 @import "{{ site.theme }}";
-#posts {
+#links {
     color: forestgreen;
     text-decoration: none;
 }
-#posts:hover {
+#links:hover {
     text-decoration: underline;
     color: blue;
 }
