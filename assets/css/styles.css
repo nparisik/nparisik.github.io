@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.postlinks {
+    color: $header-heading-color;
+    text-decoration: none;
+}
+.postlinks:hover {
+    text-decoration: underline
+}
