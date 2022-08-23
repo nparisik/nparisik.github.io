@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<body>
+
+<!-- Main Links -->
+<h1>Welcome!</h1>
+<p><a href="/">Home</a></p>
+<p><a href="/static/resume.pdf">Resume</a></p>
+<p><a href="https://www.github.com/nparisik">Github</a></p>
+<p><a href="https://www.linkedin.com/in/nicholas-parisik">LinkedIn</a></p>
+<h1></h1>
+    
+<h1>REST in-depth</h1>
+<h3>August 23, 2022</h3>
+<h2>Contents</h2>
+    <ul>
+	<li>What does REST really mean?</il>
+	<li>6 REST Constraints</li>
+	<li>Beneficial properties achieved</li>
+</ul>
+
+<h2>What does REST really mean?</h2>
+<p>a server has a resource and a client requests a representation of the resource’s state (data)</p>
+<p>the client doesn’t care about the server’s internal implementations at all, simply cares about transferring representational states 
+<p>rest architecture makes it simpler for systems to communicate on the web, as just HTTP calls are utilized (rather than SOAP, for example)
+<p>specifically, HTTP requests, responses, methods, and status codes are utilized!</p>
+
+<h2>6 REST Constraints</h2>
+<p>App will exhibit many desirable properties (more in-depth info below) if all REST constraints are followed</p>
+<ol>
+    <li>all communication between server and client should be stateless. so all client session info is maintained by the client, however this also means each request must contain all necessary info, no context information is available</li>
+    <li>server responses must be marked as cacheable or non-cacheable (performance)</li>
+    <li>uniform interface - four part constraint</li>
+        <ul>
+            <li>resources are identified via URIs (remember, the resources themselves are different from the representations)</li>
+            <li>if a client holds a representation and any necessary metadata, it has enough info to modify the resource on the server (with appropriate permissions)</li>
+            <li>each message must contain all info needed to inform the server on processing it (self-descriptive messages)</li>
+            <li>hypermedia as the engine of application state, or HATEOAS, allows the client to have minimal knowledge about HOW to interact with the server. this is because the server dynamically generates responses to the client using hypermedia (allows sending data and specifying actions)</li>
+        </ul>
+    <li>it’s best to symbolize a resource with a webpage, considering each resource should have one logical UI</li>
+    <li>client should only know immediate layer it is communicating with. should not be able to tell if it is communicating with intermediary or server itself</li>
+    <li>code on-demand is actually an optional constraint in rest arch. it means the server can send code the client should execute at runtime to extend functionality. e.g. javascript in web pages</li>
+</ol>
+
+<h2>Desirable Properties Achieved with REST</h2>
+<ul>
+    <li>lightweight and flexible, allows many data formats</li>
+    <li>simplicity, it just acts as an extension of HTTP</li>
+    <li>highly scalable</li>
+    <li>easy to implement, allows for clear separation of front end and back end</li>
+    <li>caching is easier, this is critical for application performance</li>
+</ul>
+<p>These qualities are quite essential in networked applications!</p>
+
+<p><a href="/">Back to home</a></p>
+</body>
