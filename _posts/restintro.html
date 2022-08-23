@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<body>
+
+<!-- Main Links -->
+<h1>Welcome!</h1>
+<p><a href="/">Home</a></p>
+<p><a href="/static/resume.pdf">Resume</a></p>
+<p><a href="https://www.github.com/nparisik">Github</a></p>
+<p><a href="https://www.linkedin.com/in/nicholas-parisik">LinkedIn</a></p>
+<h1></h1>
+
+<!-- Full Post -->
+<h1>RESTful Systems: Intro</h1>
+<h3>August 22, 2022</h3>
+
+<h2>Contents</h2>
+<ul>
+	<li>Architecture</il>
+	<li>HTTP Verbs</li>
+	<li>Response Codes</li>
+</ul>
+
+<h2>REST Architecture</h2>
+<p>-REST, representational state transfer, defines general constraints to follow while developing APIs. Provides a large amount of flexibility, as it does not demand strict implementation rules</p>
+<p>-With REST arch., we can control data over the internet through HTTP commands</p>
+<p>-The main idea behind REST is to provide a uniform interoperability between applications on the internet, namely in a stateless manner</p>
+<p>-Benefits of REST arch include:</p>
+<ul>
+	<li>increased performance</li>
+	<li>scalability</li>
+	<li>extensibility</li>
+	<li>modifiability</li>
+	<li>simplicity</li>
+</ul>
+
+<h2>REST Verbs</h2>
+<p>-HTTP methods are available for interacting with resources on the server. The five main verbs used in a well-designed RESTful application are:</p>
+<ul>
+	<li>GET: read resource</li>
+	<li>POST: create resource</li>
+	<li>PUT: update existing resource (may create if none exists)</li>
+	<li>PATCH: partial update on resource</li>
+	<li>DELETE: deletes resource</li>
+</ul>
+<p>—There are other HTTP verbs as well, such as HEAD, OPTIONS, etc. </p>
+<p>-If a system implements these four methods for database management/interaction, it is said to be a CRUD system. It is important to note that CRUD relates to writing data into a database specifically, while REST is compatible with any object/resource, to and from.</p>
+
+<h2>Response Codes</h2>
+<p>-Communication between client and server in a RESTful system occurs primarily via HTTP response codes</p>
+<p>-A client makes a request to the server, which is handled by the controller, mapped to an appropriate endpoint, some business logic and database interaction may occur, and a response code is sent back to the user to convey their request results</p>
+<p>-There are five categories for response codes:</p>
+<ul>
+	<li>1xx - Informational</li>
+	<li>2xx - Success</li>
+	<li>3xx - Redirection</li>
+	<li>4xx - Client Error</li>
+	<li>5xx - Server Error</li>
+</ul>
+</body>
